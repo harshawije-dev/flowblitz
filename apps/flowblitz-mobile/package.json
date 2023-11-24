@@ -1,0 +1,25 @@
+{
+  "name": "flowblitz-mobile",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@expo/metro-config": "*",
+    "@heroicons/react": "^2.0.18",
+    "@nx/expo": "*",
+    "@testing-library/jest-native": "*",
+    "@testing-library/react-native": "*",
+    "expo": "*",
+    "metro-config": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-paper": "^5.11.2",
+    "react-native-safe-area-context": "^4.7.4",
+    "react-native-svg": "*",
+    "react-native-svg-transformer": "*",
+    "react-native-web": "*"
+  },
+  "scripts": {
+    "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/flowblitz-mobile && cp package-lock.json apps/flowblitz-mobile",
+    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/flowblitz-mobile"
+  }
+}
